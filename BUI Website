@@ -1,0 +1,73 @@
+##html code
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable"
+        content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style2.css">
+        <title>BUI</title>
+     
+    </head>
+    <body>
+        <section class="logo" id="logo">
+<div class="container">
+    <div class="logo-img">
+        <img src="images/Screenshot__10__LI-removebg-preview.png"  width="100" height="100">
+    </div>
+    </section>
+    
+    <section class="label">
+    <form action="/action_page.php">
+        <label for="ID">ID:</label>
+        <input type="ID" id="ID" name="ID"><br><br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+      </form>
+    </section>
+
+    <section class="button">
+        <button class="button">Log In</button><br>
+      
+    </section>
+
+
+
+
+    </body>
+</html>
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+##css code:
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    background-color:rgb(230, 194, 200);
+}
+            .container{
+                text-align: center;
+                margin-top: 10%;
+            }
+            .label{
+                text-align: center;
+                padding: 10px 24px;
+                color: rgba(216, 112, 147, 0.572);
+                size: 40%;
+            }
+          
+            .button{
+                color: palevioletred;
+                width: 250px;
+                text-align: center;
+                padding: 10px 24px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                
+            }
