@@ -18,8 +18,7 @@ except:
     print(f"torch version: {torch.__version__}")
     print(f"torchvision version: {torchvision.__version__}")
 -------------------------------------------------------------------------------------------------------------
-
-!pip install torchinfo
+  !pip install torchinfo
 -------------------------------------------------------------------------------------------------------------
 
 import matplotlib.pyplot as plt
@@ -40,6 +39,7 @@ except:
     !pip install -q torchinfo
     from torchinfo import summary
 --------------------------------------------------------------------------------------------------------------    
+
 import os
 import matplotlib.pyplot as plt
 import numpy as np
