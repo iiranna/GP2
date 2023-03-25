@@ -18,9 +18,10 @@ except:
     print(f"torch version: {torch.__version__}")
     print(f"torchvision version: {torchvision.__version__}")
 -------------------------------------------------------------------------------------------------------------
-#install torchinfo
+
 !pip install torchinfo
 -------------------------------------------------------------------------------------------------------------
+
 import matplotlib.pyplot as plt
 import torch
 import torchvision
@@ -29,7 +30,7 @@ from torchvision import transforms
 from torch import nn
 from torchvision import transforms
 
-# Try to get torchinfo, install it if it doesn't work
+
 try:
 
     from torchinfo import summary
