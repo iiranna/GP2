@@ -10,6 +10,7 @@ try:
     print(f"torch version: {torch.__version__}")
     print(f"torchvision version: {torchvision.__version__}")
 except:
+
     print(f"[INFO] torch/torchvision versions not as required, installing nightly versions.")
     !pip3 install -U torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
     import torch
@@ -30,8 +31,10 @@ from torchvision import transforms
 
 # Try to get torchinfo, install it if it doesn't work
 try:
+
     from torchinfo import summary
 except:
+
     print("[INFO] Couldn't find torchinfo... installing it.")
     !pip install -q torchinfo
     from torchinfo import summary
