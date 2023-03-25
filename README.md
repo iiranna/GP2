@@ -1,7 +1,7 @@
 # GP2
 Graduation Project 2
 
-try:
+[1] try:
   
     import torch
     import torchvision
@@ -18,16 +18,18 @@ except:
     print(f"torch version: {torch.__version__}")
     print(f"torchvision version: {torchvision.__version__}")
 -------------------------------------------------------------------------------------------------------------
-  !pip install torchinfo
+
+[2] !pip install torchinfo
+ 
 -------------------------------------------------------------------------------------------------------------
 
-import matplotlib.pyplot as plt
-import torch
-import torchvision
+[3] import matplotlib.pyplot as plt
+    import torch
+    import torchvision
 
-from torchvision import transforms
-from torch import nn
-from torchvision import transforms
+    from torchvision import transforms
+    from torch import nn
+    from torchvision import transforms
 
 
 try:
