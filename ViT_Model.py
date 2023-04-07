@@ -161,7 +161,7 @@ import troch.nn as nn
         
            def __init__(
             self,
-            img_size = 384,
+            img_size = 384 -- 500,
             patch_size = 16,
             in_chans = 3,
             n_classes = 1000,
