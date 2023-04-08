@@ -3,7 +3,7 @@ from PIL import Image
 import torch
 
 
-imagenet_labels = dict(enumerate(open(classes.txt)))
+imagenet_labels = dict(enumerate(open("classes.txt")))
 
 model = torch.load("model.pth")
 model.eval()
