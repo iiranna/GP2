@@ -8,7 +8,7 @@ imagenet_labels = dict(enumerate(open("classes.txt")))
 model = torch.load("model.pth")
 model.eval()
 
-img = (np.array(Image.open("#.png")) / 128) -1
+img = (np.array(Image.open("benign.png")) / 128) -1
 inp = torch.fromnumpy(img).permute(2, 0, 1).unsqueeze(0).to(torch.float32)
 logits = model(inp)
 probs = torch.nn.functional.softmax(logits, dim = -1)
