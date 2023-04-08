@@ -1,6 +1,6 @@
 import numpy as np
 from PIL import Image
-improt torch
+import torch
 
 
 imagenet_labels = dict(enumerate(open(classes.txt)))
