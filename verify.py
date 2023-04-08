@@ -11,7 +11,7 @@ def assert_tensors_equal(t1, t2):
     
     np.testing.assert_allclose(a1, a2)
     
-model_name = "vit_base_patch16_500"
+model_name = "vit_BUI"
 model_official = timm.creat_model(model_name, pretrained=True)
 model_official.eval()
 print(type(model_official))
