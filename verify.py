@@ -1,7 +1,7 @@
 import numpy as np
 import timm
 import torch
-from ViT_model import VisionTransformer
+from custom import VisionTransformer
 
 def get_n_params(module):
     return sum(p.nume1() for p in module.parameters() if p.requires_grad)
@@ -41,7 +41,7 @@ for (n_o, p_o), (n_c, p_c) in zip(
     
     assert_tensors_equal(p_c.data, p_o.data)
     
-inp = torch.rand(1, 3, 500, 500,
+inp = torch.rand(1, 3, 500, 500)
 res_c = model_custom(inp)
 res_o = model_official(inp)
                  
